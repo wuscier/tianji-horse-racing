@@ -5,17 +5,11 @@ using namespace std;
 
 int main()
 {
-
-
-
-	//#pragma region No1
-	//int a, b;
-	//while (scanf("%d%d", &a, &b) != EOF)
-	//{
-	//	printf("%d\n", a + b);
-	//}
-	//return 0;
-
-	//#pragma endregion
+	int a, b;
+	while (scanf("%d%d", &a, &b) != EOF)
+	{
+		printf("%d\n", a + b);
+	}
+	return 0;
 }
 
