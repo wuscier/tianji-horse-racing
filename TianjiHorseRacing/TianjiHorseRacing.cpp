@@ -80,7 +80,8 @@ int main()
 			}
 		}
 
-		cout << "maximum dollars won by tianji: " << Rounds_Won_By_Tianji * 200 << endl;
+		//cout << "maximum dollars won by tianji: " << Rounds_Won_By_Tianji * 200 << endl;
+		cout << Rounds_Won_By_Tianji * 200 << endl;
 	}
 
 	return 0;
