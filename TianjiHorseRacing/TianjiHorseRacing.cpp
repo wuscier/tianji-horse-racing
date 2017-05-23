@@ -18,6 +18,11 @@ int main()
 		cout << "enter the number of horse(s): ";
 		cin >> Input_Horse_Number;
 
+		if (Input_Horse_Number == 0)
+		{
+			break;
+		}
+
 		cout << "enter speed of each of tianji's horse(s), each divided by space: ";
 		for (int i = 0; i < Input_Horse_Number; i++)
 		{
