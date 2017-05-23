@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TianjiHorseRacing", "Tianji
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RobotMotion", "RobotMotion\RobotMotion.vcxproj", "{B4E8EA2A-BE97-43FB-B7C6-8D94A2319DDD}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Acm_Basics", "Acm_Basics\Acm_Basics.vcxproj", "{19F00D80-65BB-4AD8-8199-E980B9D546A2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -31,6 +33,14 @@ Global
 		{B4E8EA2A-BE97-43FB-B7C6-8D94A2319DDD}.Release|x64.Build.0 = Release|x64
 		{B4E8EA2A-BE97-43FB-B7C6-8D94A2319DDD}.Release|x86.ActiveCfg = Release|Win32
 		{B4E8EA2A-BE97-43FB-B7C6-8D94A2319DDD}.Release|x86.Build.0 = Release|Win32
+		{19F00D80-65BB-4AD8-8199-E980B9D546A2}.Debug|x64.ActiveCfg = Debug|x64
+		{19F00D80-65BB-4AD8-8199-E980B9D546A2}.Debug|x64.Build.0 = Debug|x64
+		{19F00D80-65BB-4AD8-8199-E980B9D546A2}.Debug|x86.ActiveCfg = Debug|Win32
+		{19F00D80-65BB-4AD8-8199-E980B9D546A2}.Debug|x86.Build.0 = Debug|Win32
+		{19F00D80-65BB-4AD8-8199-E980B9D546A2}.Release|x64.ActiveCfg = Release|x64
+		{19F00D80-65BB-4AD8-8199-E980B9D546A2}.Release|x64.Build.0 = Release|x64
+		{19F00D80-65BB-4AD8-8199-E980B9D546A2}.Release|x86.ActiveCfg = Release|Win32
+		{19F00D80-65BB-4AD8-8199-E980B9D546A2}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
