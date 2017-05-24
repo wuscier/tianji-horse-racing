@@ -23,6 +23,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Problem1_1_7", "Problem1_1_
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Problem1_1_8", "Problem1_1_8\Problem1_1_8.vcxproj", "{A85CC3AC-59CB-4442-9829-C1A0076923D5}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ClimbingWorm", "ClimbingWorm\ClimbingWorm.vcxproj", "{108301D9-F7BD-4ABA-A770-CBB8F14F3A87}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -111,6 +113,14 @@ Global
 		{A85CC3AC-59CB-4442-9829-C1A0076923D5}.Release|x64.Build.0 = Release|x64
 		{A85CC3AC-59CB-4442-9829-C1A0076923D5}.Release|x86.ActiveCfg = Release|Win32
 		{A85CC3AC-59CB-4442-9829-C1A0076923D5}.Release|x86.Build.0 = Release|Win32
+		{108301D9-F7BD-4ABA-A770-CBB8F14F3A87}.Debug|x64.ActiveCfg = Debug|x64
+		{108301D9-F7BD-4ABA-A770-CBB8F14F3A87}.Debug|x64.Build.0 = Debug|x64
+		{108301D9-F7BD-4ABA-A770-CBB8F14F3A87}.Debug|x86.ActiveCfg = Debug|Win32
+		{108301D9-F7BD-4ABA-A770-CBB8F14F3A87}.Debug|x86.Build.0 = Debug|Win32
+		{108301D9-F7BD-4ABA-A770-CBB8F14F3A87}.Release|x64.ActiveCfg = Release|x64
+		{108301D9-F7BD-4ABA-A770-CBB8F14F3A87}.Release|x64.Build.0 = Release|x64
+		{108301D9-F7BD-4ABA-A770-CBB8F14F3A87}.Release|x86.ActiveCfg = Release|Win32
+		{108301D9-F7BD-4ABA-A770-CBB8F14F3A87}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
