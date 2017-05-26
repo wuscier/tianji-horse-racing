@@ -15,7 +15,7 @@ int main()
 
 	while (true)
 	{
-		cout << "enter the number of horse(s): ";
+		//cout << "enter the number of horse(s): ";
 		cin >> Input_Horse_Number;
 
 		if (Input_Horse_Number == 0)
@@ -23,13 +23,13 @@ int main()
 			break;
 		}
 
-		cout << "enter speed of each of tianji's horse(s), each divided by space: ";
+		//cout << "enter speed of each of tianji's horse(s), each divided by space: ";
 		for (int i = 0; i < Input_Horse_Number; i++)
 		{
 			cin >> Tianji_Horses_Speeds[i];
 		}
 
-		cout << "enter speed of each of king's horse(s), each divided by space: ";
+		//cout << "enter speed of each of king's horse(s), each divided by space: ";
 		for (int i = 0; i < Input_Horse_Number; i++)
 		{
 			cin >> King_Horses_Speeds[i];
