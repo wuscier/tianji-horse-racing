@@ -6,83 +6,70 @@ int main()
 {
 	const int Max_Row = 10, Max_Column = 10;
 	char Grid[Max_Row][Max_Column];
+	char Path[Max_Row][Max_Column];
 
 	int Input_Row, Input_Column, Starting_Column;
 
-
-	while (true)
+	while (scanf("%d%d%d", &Input_Row, &Input_Column, &Starting_Column) != EOF)
 	{
-		cout << "Enter number of row(s), number of column(s), and number of starting column. Each divided by space: ";
-
-		cin >> Input_Row;
-		cin >> Input_Column;
-		cin >> Starting_Column;
-
-		if (Input_Row == 0 && Input_Column == 0)
+		if (Input_Row == 0 || Input_Column == 0)
 		{
 			break;
 		}
 
-		for (int row = 0; row < Input_Row; row++)
+		for (int i = 0; i < Input_Row; i++)
 		{
-			cin >> Grid[row];
+			scanf("%s", Grid[i]);
 		}
 
+
+		int x = 0;
+		int y = Starting_Column - 1;
 		int steps = 0;
-		bool Out_Of_Grid = false;
 
-		for (int row = 0; row < Input_Row;)
+		while (x >= 0 && y >= 0 && x < Input_Row&&y < Input_Column&&Grid[x][y] != 'X')
 		{
-			if (Out_Of_Grid)
+			if (Grid[x][y] == 'N')
 			{
-				break;
+				Grid[x][y] = 'X';
+				Path[x][y] = steps++;
+
+
+				x--;
 			}
-			for (int column = Starting_Column - 1; column < Input_Column;)
+			else if (Grid[x][y] == 'S')
 			{
-				steps++;
+				Grid[x][y] = 'X';
+				Path[x][y] = steps++;
 
-				switch (Grid[row][column])
-				{
-				case 'E':
-					if ((++column) == Input_Column)
-					{
-						Out_Of_Grid = true;
-					}
-					break;
-				case 'S':
-					if ((++row) == Input_Row)
-					{
-						Out_Of_Grid = true;
-					}
-					break;
-				case 'W':
-					if ((--column) == -1)
-					{
-						Out_Of_Grid = true;
-					}
-					break;
-				case 'N':
-					if ((--row) == -1)
-					{
-						Out_Of_Grid = true;
-					}
-					break;
-				}
 
-				if (Out_Of_Grid)
-				{
-					break;
-				}
+				x++;
 			}
+			else if (Grid[x][y] == 'E')
+			{
+				Grid[x][y] = 'X';
+				Path[x][y] = steps++;
+
+
+				y++;
+			}
+			else if (Grid[x][y] == 'W')
+			{
+				Grid[x][y] = 'X';
+				Path[x][y] = steps++;
+
+
+				y--;
+			}
+
 		}
 
-		if (Out_Of_Grid)
+		if (Grid[x][y] == 'X')
 		{
-			cout << steps << "step(s) to exit" << endl;
+			printf("%d step(s) before a loop of %d step(s)\n", Path[x][y], steps - Path[x][y]);
 		}
-		else
-		{
-			cout << 3 << "step(s) before a loop of " << 8 << " step(s)" << endl;
+		else {
+			printf("%d step(s) to exit\n", steps);
 		}
 	}
 
